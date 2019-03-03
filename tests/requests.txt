@@ -1,0 +1,9 @@
+query{
+  listPlaces{
+    name
+  }
+}
+
+mutation($n: String!, $ltd: String!, $lgt: String!){
+  createPlace(name: $n, latitude: $ltd, longitude:$lgt)
+}
